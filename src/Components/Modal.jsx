@@ -56,12 +56,12 @@ const Modal = ({ setIsModalOpen, setModalOpenBackground }) => {
             <label htmlFor="email">
               <h3>Email Address:</h3>
             </label>
-            <input type="text" id="email" name="email" value={formData.email} onChange={handleChange} required />
+            <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
 
             <label htmlFor="phone">
               <h3>Phone Number:</h3>
             </label>
-            <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
+            <input type="number" id="phone" name="phone" value={formData.phone} onChange={handleChange} required />
 
             <label htmlFor="dob">
               <h3>Date of Birth:</h3>
