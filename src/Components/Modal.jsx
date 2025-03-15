@@ -23,19 +23,19 @@ const Modal = ({ setIsModalOpen, setModalOpenBackground }) => {
     e.preventDefault();
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      window.alert("Invalid email. Your email address should be in the format: text@text.com");
+      window.alert("Invalid email");
       return;
     }
 
     if (formData.phone.length < 10) {
-      window.alert("Invalid phone number. Please enter a 10-digit phone number.");
+      window.alert("Invalid phone number");
       return;
     }
 
     const inputDate = new Date(formData.dob);
     const currentDate = new Date();
     if (currentDate < inputDate) {
-      window.alert("Invalid date of birth. Date of birth cannot be in the future.");
+      window.alert("Invalid date of birth");
       return;
     }
   };
