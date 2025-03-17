@@ -20,7 +20,7 @@ const Modal = ({ setIsModalOpen, setModalOpenBackground }) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       window.alert("Invalid email");
